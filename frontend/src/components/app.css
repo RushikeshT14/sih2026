@@ -1,0 +1,9 @@
+.hero_background{
+    position: relative;
+     width: 100%;
+}
+.hero_background img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}

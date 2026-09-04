@@ -1,0 +1,28 @@
+.nav_con{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    background: #0505056e;
+    color: white;
+}
+
+ 
+.nav_con ul {
+    margin: 20px 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 100px;
+
+}
+.nav_con ul li{
+    width: 100px;
+    background-color: red;
+}
