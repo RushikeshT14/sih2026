@@ -1,9 +1,314 @@
-.hero_background{
-    position: relative;
-     width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.hero_background img {
-    display: block;
+
+body {
+  margin: 0;
+  background: #000;
+}
+
+/* Main application */
+
+.app {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Fixed background */
+
+.app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../assets/untitled.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Content */
+
+/* .content {
+    position: relative;
+    z-index: 5;
+
+    min-height: 200vh;
+
+    padding-top: 100px;
+
+    color: white;
+} */
+
+/* ------------------------------------------------------DATA---------------------- */
+/* .data{
+    margin-top: 2rem;
+    position: relative;
+    background:#52e1c73b ;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    gap: 50px;
+    
+} */
+
+.data {
+    position: relative;
+
     width: 100%;
-    height: 100vh;
+    padding: 25px 40px;
+    background: #52e1c73b;
+    color: white;
+    z-index: 20;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.data_header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.data_header span {
+    font-size: 13px;
+    color: #ffffffaa;
+}
+
+.data_header h2 {
+    margin: 4px 0 0;
+
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   OCEAN SELECTOR
+========================= */
+
+.data_selector {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.data_selector label {
+    font-size: 13px;
+    color: #ffffffaa;
+}
+
+.data_selector select {
+    min-width: 190px;
+
+    padding: 9px 14px;
+
+    border: 1px solid #ffffff40;
+    border-radius: 8px;
+
+    background: #00000070;
+    color: white;
+
+    outline: none;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.data_selector select option {
+    background: #111;
+    color: white;
+}
+
+
+/* =========================
+   DATA GRID
+========================= */
+
+.data_grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 12px;
+}
+
+
+/* =========================
+   DATA BOX
+========================= */
+
+.data_box {
+    min-height: 75px;
+
+    padding: 12px 14px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    background: #00000035;
+
+    border: 1px solid #ffffff25;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border 0.2s ease;
+}
+
+
+/* Label */
+
+.data_box span {
+    font-size: 11px;
+
+    color: #ffffffaa;
+
+    white-space: nowrap;
+}
+
+
+/* Value */
+
+.data_box strong {
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: white;
+
+    white-space: nowrap;
+}
+
+
+/* Hover */
+
+.data_box:hover {
+    background: #00000065;
+
+    border-color: #ffffff45;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1200px) {
+
+    .data_grid {
+        grid-template-columns:
+            repeat(4, 1fr);
+    }
+
+}
+
+
+/* =========================
+   SMALL TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .data {
+        padding: 20px;
+    }
+
+    .data_grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .data_header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .data_selector {
+        width: 100%;
+    }
+
+    .data_selector select {
+        flex: 1;
+    }
+
+    .data_grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 420px) {
+
+    .data {
+        padding: 15px;
+    }
+
+    .data_grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* --------------------------------zindex */
+
+
+.about_page_con{
+    height: 500px;
+    position: relative;
+    z-index: 10;
+    margin-top: 100px;
+    background: white;
+    color: rgb(14, 13, 13);
+
+}
+.contact_page_con{
+     height: 500px;
+    position: relative;
+    z-index: 10;
+    margin-top: 100px;
+    background: white;
+    color: rgb(14, 13, 13);
 }

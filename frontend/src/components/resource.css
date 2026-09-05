@@ -1,0 +1,356 @@
+.resources {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    /* background: #52e1c73b; */
+    color: #ffffff;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.resources_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+.resources_header h1 {
+    margin: 0;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+
+/* View all */
+
+.view_all {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ddd;
+}
+
+.view_all span {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ef4b43;
+    color: white;
+}
+
+
+/* =========================
+   TOOLS
+========================= */
+
+.resources_tools {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+/* Filter */
+
+.filter_section p {
+    margin: 0 0 15px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.filter_dropdown {
+    position: relative;
+    width: 105px;
+}
+
+.filter_dropdown select {
+    appearance: none;
+    width: 130px;
+    padding: 10px 35px 10px 18px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+    background: #77777747;
+    color: #f6f5f5;
+    font-size: 13px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter_dropdown svg {
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.resource_search {
+    width: 310px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 0;
+    border-bottom: 1px solid #999;
+}
+
+.resource_search svg {
+    color: #ffffff;
+}
+
+.resource_search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.resource_search input::placeholder {
+    color: #777;
+}
+
+
+/* =========================
+   CARD GRID
+========================= */
+
+.resources_grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 35px 10px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.resource_card {
+    width: 100%;
+
+    overflow: hidden;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.resource_image {
+    width: 100%;
+
+    height: 280px;
+
+    overflow: hidden;
+
+    background: #ddd;
+}
+
+.resource_image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.resource_card:hover .resource_image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.resource_content {
+    padding: 18px 2px 0;
+}
+
+.resource_content h2 {
+    margin: 0 0 12px;
+
+    font-size: 20px;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+
+    max-width: 95%;
+}
+
+.resource_content p {
+    margin: 0;
+
+    max-width: 95%;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================
+   META
+========================= */
+
+.resource_meta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.resource_type {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.type_icon {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #999;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+}
+
+.resource_date {
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   NO RESULTS
+========================= */
+
+.no_results {
+    padding: 80px 0;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .resources {
+        padding: 30px;
+    }
+
+    .resources_grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 35px 20px;
+    }
+
+    .resource_image {
+        height: 250px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .resources {
+        padding: 25px 18px;
+    }
+
+    .resources_header {
+        align-items: flex-start;
+
+        gap: 15px;
+
+        flex-direction: column;
+
+        margin-bottom: 35px;
+    }
+
+    .resources_header h1 {
+        font-size: 30px;
+    }
+
+    .resources_tools {
+        align-items: flex-start;
+
+        gap: 25px;
+
+        flex-direction: column;
+    }
+
+    .resource_search {
+        width: 100%;
+    }
+
+    .resources_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resource_image {
+        height: 250px;
+    }
+
+}

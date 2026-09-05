@@ -1,0 +1,444 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    margin-top:  100px ;
+    position: relative;
+    width: 100%;
+    padding: 70px 60px 25px;
+    color: white;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 30;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   TOP
+========================= */
+
+.footer_top {
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 70px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.footer_brand h1 {
+    margin: 0 0 20px;
+    font-size: 42px;
+    letter-spacing: -1.5px;
+}
+.footer_brand .ocean_name{
+    color: rgb(91, 115, 252);
+    font-weight: 600;
+}
+
+.footer_brand h1 span {
+    font-weight: 400;
+}
+
+.footer_brand p {
+    max-width: 380px;
+
+    margin: 0 0 25px;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* Status */
+
+.footer_status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 13px;
+}
+
+.status_dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #52e1c7;
+
+    box-shadow: 0 0 10px #52e1c7;
+}
+
+
+/* =========================
+   COLUMNS
+========================= */
+
+.footer_column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.footer_column h3 {
+    margin: 0 0 12px;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer_column a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    width: fit-content;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.footer_column a:hover {
+    color: white;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   MIDDLE
+========================= */
+
+.footer_middle {
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    padding: 45px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+/* Text */
+
+.footer_middle_text span {
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer_middle_text h2 {
+    max-width: 550px;
+
+    margin: 10px 0 0;
+
+    font-size: 28px;
+
+    line-height: 1.2;
+}
+
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+    width: 430px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 7px 0 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    box-sizing: border-box;
+}
+
+.newsletter svg {
+    color: rgba(255, 255, 255, 0.6);
+
+    flex-shrink: 0;
+}
+
+.newsletter input {
+    flex: 1;
+
+    min-width: 0;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+.newsletter input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.newsletter button {
+    height: 40px;
+
+    padding: 0 20px;
+
+    border: none;
+
+    border-radius: 22px;
+
+    background: white;
+
+    color: #111;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.newsletter button:hover {
+    transform: translateY(-1px);
+
+    background: #52e1c7;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.footer_bottom {
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    padding-top: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.footer_bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   SOCIAL
+========================= */
+
+.footer_social {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.footer_social a {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 50%;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    transition: 0.2s;
+}
+
+.footer_social a:hover {
+    color: white;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   LEGAL
+========================= */
+
+.footer_legal {
+    display: flex;
+
+    gap: 20px;
+}
+
+.footer_legal a {
+    color: rgba(255, 255, 255, 0.5);
+
+    text-decoration: none;
+
+    font-size: 12px;
+}
+
+.footer_legal a:hover {
+    color: white;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .footer {
+        padding: 55px 30px 25px;
+    }
+
+    .footer_top {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 45px;
+    }
+
+    .footer_middle {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .newsletter {
+        width: 100%;
+
+        max-width: 500px;
+    }
+
+    .footer_bottom {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding: 45px 20px 20px;
+    }
+
+    .footer_top {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding-bottom: 45px;
+    }
+
+    .footer_brand h1 {
+        font-size: 36px;
+    }
+
+    .footer_middle {
+        padding: 35px 0;
+    }
+
+    .footer_middle_text h2 {
+        font-size: 23px;
+    }
+
+    .newsletter {
+        height: auto;
+
+        padding: 7px 7px 7px 14px;
+    }
+
+    .newsletter input {
+        width: 100px;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}

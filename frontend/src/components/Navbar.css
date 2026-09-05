@@ -1,28 +1,128 @@
-.nav_con{
-    position: absolute;
+
+.nav_con {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
-    padding: 0;
-    margin: 0;
     height: 60px;
-    width: 100%;
-    background: #0505056e;
+    z-index: 1000;
+    padding: 0 30px;
+    margin: 0;
+    background: #2e3031d6;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
- 
+.nav_logo{
+    font-size: 22px;
+}
+
+.nav_logo .ocean_name{
+    color: rgb(91, 115, 252);
+    font-weight: 600;
+}
+
+
+/* Navigation */
+
 .nav_con ul {
-    margin: 20px 0;
+    /* background: rgb(147, 20, 20); */
+    margin: 0;
     padding: 0;
-    text-decoration: none;
     list-style: none;
     display: flex;
-    gap: 100px;
-
+    align-items: center;
+    gap: 50px;
 }
-.nav_con ul li{
-    width: 100px;
-    background-color: red;
+
+.nav_con ul li {
+    background: rgba(96, 124, 142, 0.371);
+    padding: 8px 16px;
+    width: auto;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    font-style: "poppins";
+}
+
+
+/* Home button */
+/* 
+.home_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+} */
+
+
+/* Right side */
+
+.nav_right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Search */
+
+.search_box {
+    height: 36px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 12px;
+    border: 1px solid #ffffff80;
+    border-radius: 20px;
+    background: #ffffff15;
+    box-sizing: border-box;
+}
+
+.search_box input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+    color: white;
+
+    font-size: 14px;
+}
+
+.search_box input::placeholder {
+    color: #ddd;
+}
+
+
+/* Login */
+
+.login_btn {
+    padding: 8px 18px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: white;
+    color: black;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.login_btn:hover {
+    background: #ddd;
 }
