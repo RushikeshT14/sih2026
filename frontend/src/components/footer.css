@@ -47,8 +47,10 @@
     letter-spacing: -1.5px;
 }
 .footer_brand .ocean_name{
-    color: rgb(91, 115, 252);
+     color: rgba(91, 115, 252, 0.825);
     font-weight: 600;
+    font-family: "Sanchez";
+
 }
 
 .footer_brand h1 span {

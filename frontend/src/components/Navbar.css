@@ -17,12 +17,14 @@
 }
 
 .nav_logo{
-    font-size: 22px;
+    font-size: 26px;
 }
 
 .nav_logo .ocean_name{
-    color: rgb(91, 115, 252);
+    color: rgba(91, 115, 252, 0.825);
     font-weight: 600;
+    font-size: 30px;
+    font-family: "Sanchez";
 }
 
 
